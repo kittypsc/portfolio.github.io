@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/6199cba9a7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="header">
+            
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Hi! I'm <span class="auto-input"></span></h1>
+                        <p>I love creating fun and interactive websites.</p>
+                        <a href="contact.html" class="btn2">Get in touch</a>
+            </div>
+            <div class="kitty">
+                <img src="images/user4.png">
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+                var typed = new Typed(".auto-input", {
+    
+                    strings: ["Kitty Chan", "a developer", "a designer", "a producer"],
+                    typeSpeed: 100,
+                    backSpeed: 100,
+                    loop: true
+                })
+            </script>
+
+        </section>
+    </div>
+    <section class="example">
+        <div class="section1">
+            <div>
+                <img src="images/example 1.jpg">
+            </div>
+
+
+        </div>
+        <div class="section2">
+            <div class="section2-text">
+                
+                    <p>I design websites using HTML, CSS and Javascript.</p>
+        
+            </div>
+        </div>
+    
+    </section>
+    <section class="example2">
+        <div class="section4">
+            <div class="section4-text">
+                
+                    <p>I can also create graphics, animation and videos using Adobe Creative Cloud.</p>
+                    
+            
+            </div>
+        </div>
+        
+        <div class="section3">
+            <div class="video1">
+                <div class="video2">
+                    
+                        <iframe width="480" height="260" src="https://www.youtube.com/embed/hRO8gMPA5DU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                </div>
+                
+            </div>
+
+
+        </div>
+        
+    
+    </section>
+<!-------Footer------->
+<section class="footer">
+    <div class="icons">
+     <i class="fa-brands fa-instagram"></i>
+     <i class="fa-brands fa-github"></i>
+     <a href="https://www.linkedin.com/in/kitty-chan-783484155/"><i class="fa-brands fa-linkedin"></i></a>
+ </div>
+ 
+</section>
+
+
+
+
+
+        <!------JavaScript for Toggle Menu------>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+        
+    </body>
+</html>
