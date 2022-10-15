@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/6199cba9a7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            
+            <nav class="nav1">
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </section>
+        
+
+        <section class="portfolio1">
+            <div class="port-sec1">
+                <div>
+                    <div class="port-text">
+                        <h1>Code Ed Website</h1>
+                        <br>
+                        <p>This is a the first website I built from scratch after watching a Youtube video.
+                            Built with HTML, CSS and Javascript.
+                        </p>
+
+                    </div>
+
+                    
+                </div>
+            
+            </div>
+            <div class="port-sec2">
+                <video autoplay loop controls plays-inline>
+                    <source src="images/video.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+        
+        </section>
+        <section class="portfolio2">
+            <div class="port2-sec1">
+                <div>
+                    <img src="images/example 3.jpg">
+                   
+                </div>
+            </div>
+            <div class="port2-sec2">
+                <div>
+                    
+                    <h1>RKM Website</h1>
+                    <br>
+                    <p>The second website I built encompasses a video background. 
+                        It has also been built with HTML, CSS and Javascript.
+
+                    </p>
+                    
+                        
+                </div>
+            </div>
+            
+            
+        </section>
+
+
+    
+    
+<!-------Footer------->
+<section class="footer">
+    <div class="icons">
+     <i class="fa-brands fa-instagram"></i>
+     <i class="fa-brands fa-github"></i>
+     <a href="https://www.linkedin.com/in/kitty-chan-783484155/"><i class="fa-brands fa-linkedin"></i></a>
+ </div>
+ 
+</section>
+
+
+
+
+
+        <!------JavaScript for Toggle Menu------>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+        
+    </body>
+</html>
